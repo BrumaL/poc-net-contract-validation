@@ -16,7 +16,8 @@ namespace PocContractValidation.Consumer.Tests
 
             var orderSerivce = new OrderService();
 
-            // Test implementation of the function that reads and processses the message from the queue.
+            // Test implementation of the function that reads and processses the message from the queue. In our test we do this by fetching mocked data from our contracts-repo.
+            // If our test pass with the mocked data, we can be certain our implementation is working.
             var exception = Record.Exception(() => orderSerivce.DoSomethingWithOrderLocked(mockedOrderLockedEvent));
 
             Assert.Null(exception);

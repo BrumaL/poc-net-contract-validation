@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if not exist &quot;$(ProjectDir)contract-validation&quot; git clone https://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@github.com/mattias-persson/contract-validation" />
+    <Exec Command="if not exist &quot;$(ProjectDir)poc-pact-sns-provider&quot; (&#xD;&#xA;git clone https://github.com/BrumaL/poc-pact-sns-provider.git&#xD;&#xA;)" />
   </Target>
 
 </Project>

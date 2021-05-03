@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PocContractValidation.Consumer.Server", "PocContractValidation.Consumer.Server\PocContractValidation.Consumer.Server.csproj", "{0F214521-360B-46EE-A93C-EE825D313C87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocContractValidation.Consumer.Tests", "PocContractValidation.Consumer.Tests\PocContractValidation.Consumer.Tests.csproj", "{FD9DE2B8-E12F-44BE-BCCB-275D23BC4388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PocContractValidation.Consumer.Tests", "PocContractValidation.Consumer.Tests\PocContractValidation.Consumer.Tests.csproj", "{FD9DE2B8-E12F-44BE-BCCB-275D23BC4388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{132DC299-C80E-4959-8261-7F489EFC47BF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\test.yml = .github\workflows\test.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

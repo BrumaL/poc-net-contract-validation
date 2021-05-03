@@ -12,12 +12,11 @@ namespace PocNetPactConsumer.Server
     {
         public static readonly HttpClient client = new HttpClient();
 
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             var mockedOrderLockedJsonString = File.ReadAllText($"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}PocContractValidation.Consumer.Tests{Path.DirectorySeparatorChar}contract-validation/myorder/order_locked_1.mock.json");
             var mockedOrderLockedEvent = JsonSerializer.Deserialize<OrderLockedEvent>(mockedOrderLockedJsonString);
             Console.Write(mockedOrderLockedEvent);
-
         }
     }
 }

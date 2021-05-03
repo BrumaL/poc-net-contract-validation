@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if NOT EXIST &quot;$(ProjectDir)contract-validation&quot; (&#xD;&#xA; git clone https://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@github.com/mattias-persson/contract-validation &#xD;&#xA;)&#xD;&#xA;" />
+    <Exec Command="if not exist $(ProjectDir)contract-validation git clone https://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@github.com/mattias-persson/contract-validation" />
   </Target>
 
 </Project>

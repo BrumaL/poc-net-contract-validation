@@ -16,6 +16,7 @@ namespace PocContractValidation.Consumer.Tests
 
             var orderSerivce = new OrderService();
 
+            // Test implementation of the function that reads and processses the message from the queue.
             var exception = Record.Exception(() => orderSerivce.DoSomethingWithOrderLocked(mockedOrderLockedEvent));
 
             Assert.Null(exception);

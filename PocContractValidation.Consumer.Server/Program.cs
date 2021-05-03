@@ -14,6 +14,7 @@ namespace PocNetPactConsumer.Server
 
         static void Main(string[] args)
         {
+            // real implementation should get data from a queue (e.g. SQS), but in this case we just use some mock data.
             var mockedOrderLockedJsonString = File.ReadAllText($"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}PocContractValidation.Consumer.Tests{Path.DirectorySeparatorChar}contract-validation/myorder/order_locked_1.mock.json");
             var mockedOrderLockedEvent = JsonSerializer.Deserialize<OrderLockedEvent>(mockedOrderLockedJsonString);
             Console.Write(mockedOrderLockedEvent);

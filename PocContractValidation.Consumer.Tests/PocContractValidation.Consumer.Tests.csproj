@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="echo this is the directory $(ProjectDir)" />
+    <Exec Condition="!Exists('$(ProjectDir)contract-validator-contracts')" Command=" git clone https://mareklund:D3BkWT79pQCEwVGrAJu5@bitbucket.org/polestardevhouse/contract-validator-contracts.git" />
   </Target>
 
 </Project>

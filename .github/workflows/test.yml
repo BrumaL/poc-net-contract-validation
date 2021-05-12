@@ -20,5 +20,7 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build
+      - name: Clone contracts repository
+        run: git clone git@bitbucket.org:polestardevhouse/contract-validator-contracts.git ./PocContractValidation.Consumer.Tests/
       - name: Test
         run: dotnet test ./PocContractValidation.Consumer.Tests/PocContractValidation.Consumer.Tests.csproj

@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Condition="'$(ProjectDir)poc-pact-sns-provider' != ''" Command="git clone https://github.com/BrumaL/poc-pact-sns-provider.git" />
+    <Exec Command="echo this is the directory $(ProjectDir)" />
   </Target>
 
 </Project>

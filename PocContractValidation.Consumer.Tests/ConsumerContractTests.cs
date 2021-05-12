@@ -11,7 +11,8 @@ namespace PocContractValidation.Consumer.Tests
         [Fact]
         public void OrderLocked_1()
         {
-            var mockedOrderLockedJsonString = File.ReadAllText( $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}contract-validation/myorder/order_locked_1.mock.json");
+            // This is the path to the file from the cloned repository
+            var mockedOrderLockedJsonString = File.ReadAllText( $"..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}..{Path.DirectorySeparatorChar}contract-validator-contracts{Path.DirectorySeparatorChar}myorder2{Path.DirectorySeparatorChar}order_locked{Path.DirectorySeparatorChar}order_locked.mock.json");
             var mockedOrderLockedEvent = JsonSerializer.Deserialize<OrderLockedEvent>(mockedOrderLockedJsonString);
 
             var orderSerivce = new OrderService();

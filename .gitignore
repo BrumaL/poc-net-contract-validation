@@ -4,8 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Project specific files
-PocContractValidation.Consumer.Tests/contract-validation/
-
+PocContractValidation.Consumer.Tests/contract-validator-contracts/
 # User-specific files
 *.rsuser
 *.suo

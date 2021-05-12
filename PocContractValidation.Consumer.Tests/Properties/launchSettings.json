@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PocContractValidation.Consumer.Tests": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GitToken": "123131"
+      }
+    }
+  }
+}
